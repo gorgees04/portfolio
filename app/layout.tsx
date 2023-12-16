@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="font-mono">
+      <body className="font-mono bg-gBlack text-gBlue">
         <NavBar />
         {children}
       </body>

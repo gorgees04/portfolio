@@ -29,7 +29,7 @@ const NavBar = () => {
         {pages.map((page, id) => {
           console.log("pathname", pathname, "page", page);
           return (
-            <div key={id} className="text-lg font-bold text-center">
+            <div key={id} className="text-lg font-bold text-center ">
               <Link
                 href={page === "home" ? "/" : `/${page}`}
                 className={selectedPage(page)}
