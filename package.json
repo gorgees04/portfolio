@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "flowbite": "^2.2.1",
-    "flowbite-react": "^0.7.2",
+    "@tsparticles/engine": "^3.0.2",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.0.2",
     "next": "14.0.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-icons": "^4.12.0"
   },
   "devDependencies": {
     "@types/node": "^20",

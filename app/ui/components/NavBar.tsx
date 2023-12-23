@@ -1,50 +1,91 @@
 "use client";
-import { Navbar } from "flowbite-react";
-import Link from "next/link";
+
 import { usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
+import { LiaBarsSolid } from "react-icons/lia";
 
 const NavBar = () => {
+  const route = useRouter();
+  const [nav, setNav] = useState(false);
   const pathname = usePathname();
   const pages = ["home", "about", "projects", "contact"];
 
+  // check from path to highlight the page
   const selectedPage = (page: string) => {
     if (pathname === "/" && page === "home") {
-      return "text-red-700";
+      return " bg-gray-800 ";
     } else if (`/${page}` === `${pathname}`) {
-      return "text-red-700";
+      return " bg-gray-800 ";
     } else {
       return "";
     }
   };
 
+  const handleClick = (page: string = "") => {
+    setNav(!nav);
+    selectedPage(page);
+    if (page !== "") {
+      if (page == "home") {
+        setNav(false);
+        route.push("/");
+      } else {
+        route.push(page);
+      }
+    }
+  };
+
   return (
-    <Navbar
-      fluid={true}
-      rounded={true}
-      className="bg-black h-14 pt-2 sm:pt-4 relative"
-    >
-      <Navbar.Brand href="https://flowbite.com/">
-        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-          Galaxy Coder
-        </span>
-      </Navbar.Brand>
-      <Navbar.Toggle />
-      <Navbar.Collapse className="bg-black absolute top-16 left-0 p-2 sm:p-0 sm:static">
-        {pages.map((page, id) => {
-          console.log("pathname", pathname, "page", page);
-          return (
-            <div key={id} className="text-lg font-bold text-center capitalize">
-              <Link
-                href={page === "home" ? "/" : `/${page}`}
-                className={selectedPage(page)}
-              >
-                {page}
-              </Link>
-            </div>
-          );
-        })}
-      </Navbar.Collapse>
-    </Navbar>
+    <nav className="h-16 static w-full flex items-center px-3 justify-between ">
+      <h1 className="text-xl font-semibold">Galaxy Coder</h1>
+      <div>
+        <div
+          className="text-3xl cursor-pointer md:hidden"
+          onClick={() => handleClick()}
+        >
+          {nav ? "x" : <LiaBarsSolid />}
+        </div>
+
+        {/* Desktop Navigation */}
+        <ul className="hidden md:flex">
+          {pages.map((page, id) => (
+            <li
+              key={id}
+              onClick={() => handleClick(page)}
+              className={`p-4 capitalize font-bold rounded-xl  cursor-pointer duration-300 ${selectedPage(
+                page
+              )}`}
+            >
+              {page}
+            </li>
+          ))}
+        </ul>
+
+        <ul
+          className={
+            nav
+              ? "fixed md:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500"
+              : "hidden"
+          }
+        >
+          {/* Mobile Logo */}
+          <h1 className="w-full text-3xl font-bold m-4">Galaxy Coder</h1>
+
+          {/* Mobile Navigation Items */}
+          {pages.map((page, id) => (
+            <li
+              key={id}
+              onClick={() => handleClick(page)}
+              className={`py-4 font-bold capitalize  border-b  hover:text-gray-200 duration-300 cursor-pointer border-gray-600 text-center ${selectedPage(
+                page
+              )}`}
+            >
+              {page}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </nav>
   );
 };
 
