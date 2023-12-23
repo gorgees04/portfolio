@@ -3,7 +3,6 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import NavBar from "./ui/components/NavBar";
 import TsParticles from "./ui/components/TsParticles";
-import ParticleComponent from "./ui/components/ParticleComponent";
 
 const roboto = Roboto({
   weight: "400",
