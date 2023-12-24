@@ -19,18 +19,18 @@ const Projects = () => {
           return (
             <div
               key={project.name}
-              className="border-2 border-gBlue my-14 flex flex-col items-center md:flex-row rounded-lg bg-gBlue bg-opacity-10 overflow-hidden p-2"
+              className="border-2 border-gBlue my-14 flex flex-col items-center md:flex-row rounded-lg bg-gBlue bg-opacity-10 overflow-hidden p-2 md:p-4"
             >
               <div className="">
                 <Image
                   src={project.img}
                   alt={project.name}
-                  width={370}
-                  className="border-2 border-gBlue rounded-lg md:w-[450px] mr-3"
+                  width={350}
+                  className="border-2 border-gBlue rounded-lg md:w-[500px]"
                 />
               </div>
-              <div className="w-[370px] flex flex-col items-center my-3 p-1">
-                <h1 className="text-2xl font-extrabold">{project.name}</h1>
+              <div className="w-[350px] md:w-[400px] flex flex-col items-center my-3 p-1 md:mx-4">
+                <h1 className="text-xl font-extrabold">{project.name}</h1>
                 <p className="text-gLightBlue text-justify text-sm my-3">
                   {project.descrption}
                 </p>
