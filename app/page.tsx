@@ -22,9 +22,9 @@ export default function Home() {
           />
         </div>
         <div className="flex flex-col justify-center">
-          <p className="text-white">This is</p>
+          <p className="text-gLightBlue">This is</p>
           <h1 className="text-5xl ml-2 my-1 font-extrabold">Gorgees Odisho</h1>
-          <p className="text-2xl text-right text-white">Web Developer</p>
+          <p className="text-2xl text-right text-gLightBlue">Web Developer</p>
         </div>
       </div>
 
