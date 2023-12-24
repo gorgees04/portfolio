@@ -1,5 +1,5 @@
 import Image from "next/image";
-import dev5 from "@/public/images/dev-5.png";
+import dev5 from "@/public/images/home/dev-5.png";
 // import reactLogo from "@/app/ui/img/react-0.png";
 // import jsLogo from "@/app/ui/img/js-0.png";
 // import tsLogo from "@/app/ui/img/ts-0.png";
@@ -18,13 +18,13 @@ export default function Home() {
             alt="home_img"
             width={600}
             height={0}
-            className="rounded-md mr-20"
+            className="rounded-md mr-20 shadow-lg shadow-black"
           />
         </div>
         <div className="flex flex-col justify-center">
-          <p className="text-white">This is</p>
+          <p className="text-gLightBlue">This is</p>
           <h1 className="text-5xl ml-2 my-1 font-extrabold">Gorgees Odisho</h1>
-          <p className="text-2xl text-right text-white">Web Developer</p>
+          <p className="text-2xl text-right text-gLightBlue">Web Developer</p>
         </div>
       </div>
 

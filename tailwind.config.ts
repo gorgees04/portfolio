@@ -16,6 +16,7 @@ const config: Config = {
       colors: {
         gBlack: "#101314",
         gBlue: "#00C5C8",
+        gLightBlue: "#A6E9EB",
       },
     },
   },

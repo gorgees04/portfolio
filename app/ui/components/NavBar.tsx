@@ -29,7 +29,7 @@ const NavBar = () => {
       if (page == "home") {
         setNav(false);
         route.push("/");
-      } else {
+      } else if (page) {
         route.push(page);
       }
     }
@@ -56,7 +56,7 @@ const NavBar = () => {
                 page
               )}`}
             >
-              {page}
+              {page === "about" ? "About Me" : page}
             </li>
           ))}
         </ul>
@@ -80,7 +80,7 @@ const NavBar = () => {
                 page
               )}`}
             >
-              {page}
+              {page === "about" ? "About Me" : page}
             </li>
           ))}
         </ul>
