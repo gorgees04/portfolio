@@ -20,7 +20,7 @@ const About = () => {
   ];
 
   const languages = [
-    { language: "assyrian", level: "native" },
+    { language: "assyrian (aramaic)", level: "native" },
     { language: "english", level: "fluent" },
     { language: "arabic", level: "fluent" },
     { language: "kurdish", level: "fluent" },
