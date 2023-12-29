@@ -12,6 +12,8 @@ const ContactForm = () => {
   return (
     <div>
       <form
+        action="https://formsubmit.co/gorgees041@gmail.com"
+        method="POST"
         onSubmit={handleSubmit}
         className="flex flex-col justify-center w-[400px] md:w-[500px]"
       >
