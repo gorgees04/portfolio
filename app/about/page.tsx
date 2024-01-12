@@ -51,6 +51,17 @@ const About = () => {
             development. Through my journey, I've picked up problem-solving and
             teamwork skills, which I bring to every project I'm involved in.
           </div>
+
+          {/* Resume download butto */}
+          <div className="mt-10 text-center">
+            <a
+              href="files/gorgees-resume.pdf"
+              download="gorgees-resume.pdf"
+              className="border-2 border-gBlue bg-gBlue bg-opacity-10 rounded-md p-4 text-lg font-bold hover:bg-gray-600"
+            >
+              <button>CV / Resume</button>
+            </a>
+          </div>
         </div>
       </div>
 
