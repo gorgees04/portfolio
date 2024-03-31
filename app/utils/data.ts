@@ -1,7 +1,25 @@
 import gMarvelImg from "@/public/images/projects/g-marvel.png";
 import techTicketsImg from "@/public/images/projects/tech-tickets.png";
+import restaurantImg from "@/public/images/projects/restaurant-project.png";
 
 export const projectsData = [
+  {
+    name: "FreshFix",
+    descrption:
+      "freshFix is a full-stack e-commerce website enabling restaurants and customers to place and manage online orders.",
+    tools: [
+      "JavaScript",
+      "React",
+      "NextJs",
+      "Tailwind CSS",
+      "Firebase",
+      "ExpressJS",
+      "MongoDB",
+    ],
+    img: restaurantImg,
+    demo: "https://capstone-team-1.vercel.app/",
+    github: "https://github.com/202309-EKTA-JO-FSW/capstone-team-1",
+  },
   {
     name: "G-Marvel",
     descrption:
