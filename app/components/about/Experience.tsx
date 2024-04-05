@@ -22,6 +22,7 @@ const Experience = () => {
     "ExpressJS",
     "API",
     "Docker",
+    "Software testing",
   ];
   return (
     <div className="w-full flex flex-col justify-center items-center px-[10%] md:px-[20%]">
