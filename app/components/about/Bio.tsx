@@ -2,6 +2,8 @@ import Image from "next/image";
 import profileImg from "@/public/images/about/202309-EKTA-JO-FSW_Gorgees_Odisho-2.jpg";
 
 const Bio = () => {
+  const resumLink = process.env.RESUME_LINK;
+  console.log(resumLink);
   return (
     <div className="flex justify-center items-center flex-col md:flex-row mb-20 px-[5%]">
       <div>
@@ -28,9 +30,9 @@ const Bio = () => {
         {/* Resume download butto */}
         <div className="mt-10 text-center">
           <a
-            href="files/gorgees-resume.pdf"
-            download="gorgees-resume.pdf"
+            href={resumLink}
             className="border-2 border-gBlue bg-gBlue bg-opacity-10 rounded-md p-4 text-lg font-bold hover:bg-gray-600"
+            target="_blank"
           >
             <button>CV / Resume</button>
           </a>
