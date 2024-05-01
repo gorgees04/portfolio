@@ -8,9 +8,9 @@ const ExpField = ({
   techs: { name: string; img: any }[];
 }) => {
   return (
-    <div className="mb-7  bg-gBlue bg-opacity-[0.07] rounded p-1">
-      <p className="text-center text-xl font-bold my-2 capitalize">{title}</p>
-      <div className="py-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 grid-flow-row gap-2 text-center">
+    <div className="mb-3 bg-gBlue bg-opacity-[0.07] rounded p-1">
+      <p className="text-center text-xl font-bold capitalize">{title}</p>
+      <div className="py-2 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 grid-flow-row gap-2 text-center">
         {techs.map((tech: { name: string; img: string }) => (
           <div
             key={tech.name}
