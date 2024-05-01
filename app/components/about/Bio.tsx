@@ -10,7 +10,7 @@ const Bio = () => {
   const resumLink = process.env.RESUME_LINK;
 
   return (
-    <div className="flex flex-col items-center mb-10 px-[5%]">
+    <div className="flex flex-col items-center mb-5 px-[5%]">
       <div className="flex justify-center items-center flex-col md:flex-row mb-5">
         <div>
           <Image
@@ -47,7 +47,7 @@ const Bio = () => {
           </div>
         </div>
       </div>
-      <div className="my-10 flex flex-col items-center">
+      <div className="my-10 md:my-1 flex flex-col items-center">
         {showMore && (
           <div className="lg:w-[980px] text-gLightBlue text-justify">
             <ul>

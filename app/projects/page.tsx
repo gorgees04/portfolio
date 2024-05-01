@@ -27,6 +27,7 @@ const Projects = () => {
                   alt={project.name}
                   width={350}
                   className="border-2 border-gBlue rounded-lg md:w-[500px]"
+                  priority={true}
                 />
               </div>
               <div className="w-[350px] md:w-[400px] flex flex-col items-center my-3 p-1 md:mx-4">

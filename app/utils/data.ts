@@ -1,12 +1,13 @@
 import gMarvelImg from "@/public/images/projects/g-marvel.png";
 import techTicketsImg from "@/public/images/projects/tech-tickets.png";
 import restaurantImg from "@/public/images/projects/restaurant-project.png";
+import bookshelfImg from "@/public/images/projects/bookshelf.png";
 
 export const projectsData = [
   {
     name: "FreshFix",
     descrption:
-      "freshFix is a full-stack e-commerce website enabling restaurants and customers to place and manage online orders.",
+      "freshFix is a full-stack teamwork e-commerce website enabling restaurants and customers to place and manage online orders.",
     tools: [
       "JavaScript",
       "React",
@@ -15,10 +16,31 @@ export const projectsData = [
       "Firebase",
       "ExpressJS",
       "MongoDB",
+      "JWT",
+      "Bcrypt",
+      "Passport",
+      "Google OAuth",
     ],
     img: restaurantImg,
     demo: "https://capstone-team-1.vercel.app/",
     github: "https://github.com/202309-EKTA-JO-FSW/capstone-team-1",
+  },
+  {
+    name: "Bookshelf Server",
+    descrption:
+      "Bookshelf API is a backend server use to explor and share books. Create your account and store your private book or make them pulic to other can explor.",
+    tools: [
+      "JavaScript",
+      "NodeJS",
+      "ExpressJS",
+      "Firebase",
+      "PostgreSQL",
+      "JWT",
+      "Bcrypt",
+    ],
+    img: bookshelfImg,
+    demo: "https://bookshelf-app-dv7j.onrender.com/api-doc",
+    github: "https://github.com/gorgees04/bookshelf_app",
   },
   {
     name: "G-Marvel",

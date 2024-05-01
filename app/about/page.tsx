@@ -18,7 +18,7 @@ const About = () => {
 
       <Link
         href={"/projects"}
-        className="m-10 text-lg md:text-lg hover:text-gLightBlue"
+        className="mb-14 mx-5 text-lg md:text-lg hover:text-gLightBlue"
       >
         <p className="flex items-center">
           Take a look at what I have built
