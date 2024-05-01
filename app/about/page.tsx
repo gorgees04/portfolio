@@ -6,7 +6,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 const About = () => {
   return (
-    <section className="w-full flex flex-col items-center justify-center mt-[50px] md:mt-[100px]">
+    <section className="w-full flex flex-col items-center justify-center mt-[20px] md:mt-[50px]">
       {/* Main */}
       <Bio />
 
