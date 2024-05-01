@@ -10,7 +10,7 @@ const ExpField = ({
   return (
     <div className="mb-3 bg-gBlue bg-opacity-[0.07] rounded p-1">
       <p className="text-center text-xl font-bold capitalize">{title}</p>
-      <div className="py-2 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 grid-flow-row gap-2 text-center">
+      <div className="py-2 grid grid-cols-3 lg:grid-cols-5 grid-flow-row gap-2 text-center">
         {techs.map((tech: { name: string; img: string }) => (
           <div
             key={tech.name}
@@ -21,12 +21,12 @@ const ExpField = ({
                 src={tech.img}
                 alt={tech.name}
                 width={200}
-                className="w-[60px]"
+                className="w-[50px] md:w-[60px]"
               />
             </div>
             <div
               className={
-                "text-gLightBlue flex justify-center items-center h-[20%] capitalize"
+                "text-gLightBlue flex justify-center items-center h-[20%] capitalize text-sm md:text-base"
               }
             >
               <p>{tech.name}</p>

@@ -58,7 +58,7 @@ const Experience = () => {
     { name: "MongoDB (NOSQL)", img: mongodbImg },
   ];
   return (
-    <div className="w-full flex flex-col justify-center items-center px-[10%] md:px-[20%]">
+    <div className="w-full flex flex-col justify-center items-center px-[5%] lg:px-[10%]">
       <h1 className="text-3xl font-bold m-5">Experience</h1>
       <div className="w-full border-2 border-gBlue bg-gBlue bg-opacity-10 rounded-lg p-4">
         <ExpField title={"programming langauage"} techs={languages} />
