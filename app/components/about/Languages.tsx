@@ -8,7 +8,7 @@ const Languages = () => {
     { language: "kurdish", level: "fluent" },
   ];
   return (
-    <div className="my-[100px]">
+    <div className="mt-[100px] mb-[50px]">
       <h1 className="text-center text-3xl font-bold">Languages</h1>
       <div className="flex flex-wrap justify-center my-5">
         {languages.map((lang: { language: string; level: string }) => {
