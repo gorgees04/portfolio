@@ -22,9 +22,9 @@ const btnAnim = {
 
 const Hero = () => {
   return (
-    <div className="grid grid-rows-12 lg:grid-cols-12 lg:gap-10  w-full p-10 mt-[4%] min-h-screen">
+    <div className="grid grid-rows-1 md:grid-cols-2 md:gap-5 lg:gap-10 w-full p-10 mb-24 xl:mb-0 xl:min-h-[880px]">
       {/* section 1 */}
-      <div className="flex flex-col justify-center items-start col-span-6">
+      <div className="flex flex-col justify-start items-start col-span-1 lg:pl-12 lg:pt-28">
         {/* Title */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -37,11 +37,10 @@ const Hero = () => {
           className="flex flex-col justify-center text-3xl xl:text-5xl my-10"
         >
           <p className="text-gLightBlue">This is</p>
-          <h1 className="text-5xl xl:text-7xl ml-2 my-1 font-extrabold">
+          <h1 className="text-4xl md:text-5xl xl:text-7xl ml-2 my-1 font-extrabold">
             Gorgees Odisho
           </h1>
-          {/* <p className="text-right text-gLightBlue">Web Developer</p> */}
-          <p className="text-left text-gLightBlue text-[40px] ml-3">
+          <p className="text-left text-gLightBlue ml-3">
             <span className="text-white">
               <TypeAnimation
                 sequence={[
@@ -55,7 +54,8 @@ const Hero = () => {
                 ]}
                 wrapper="span"
                 speed={40}
-                style={{ fontSize: "40px", display: "inline-block" }}
+                // style={{ fontSize: "40px", display: "inline-block" }}
+                className="inline-block"
                 repeat={Infinity}
               />
             </span>
@@ -105,7 +105,7 @@ const Hero = () => {
           stiffness: 150,
           damping: 20,
         }}
-        className="col-span-6 flex justify-center lg:justify-end items-start lg:items-center lg:pr-12"
+        className="col-span-1 flex justify-center lg:justify-end items-start md:pt-16 lg:pr-12 lg:pt-28"
       >
         <Image
           src={profileImg}
