@@ -22,7 +22,7 @@ const btnAnim = {
 
 const Hero = () => {
   return (
-    <div className="grid grid-rows-12 lg:grid-cols-12 lg:gap-10  w-full p-10">
+    <div className="grid grid-rows-12 lg:grid-cols-12 lg:gap-10  w-full p-10 mt-[4%] min-h-screen">
       {/* section 1 */}
       <div className="flex flex-col justify-center items-start col-span-6">
         {/* Title */}
