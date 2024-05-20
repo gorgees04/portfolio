@@ -1,36 +1,6 @@
 "use client";
-import { FaGithubAlt } from "react-icons/fa6";
-import { FiLinkedin } from "react-icons/fi";
-import { FaMapLocationDot } from "react-icons/fa6";
-import { MdOutlineAlternateEmail } from "react-icons/md";
 import { motion } from "framer-motion";
-import { ReactNode } from "react";
-
-type Social = { name: string; link: string; icon: ReactNode };
-
-// connection platforms
-const social: Social[] = [
-  {
-    name: "github",
-    link: "https://github.com/gorgees04",
-    icon: <FaGithubAlt />,
-  },
-  {
-    name: "linkedIn",
-    link: "https://github.com/gorgees04",
-    icon: <FiLinkedin />,
-  },
-  {
-    name: "email",
-    link: "mailto:gorgees041@gmail.com",
-    icon: <MdOutlineAlternateEmail />,
-  },
-  {
-    name: "address",
-    link: "https://www.google.com/maps/place/Amman,+Jordan",
-    icon: <FaMapLocationDot />,
-  },
-];
+import { Social, social } from "@/utils/contactData";
 
 const iconAnim = {
   hidden: { x: "-100vh" },

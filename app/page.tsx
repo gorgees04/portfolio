@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero/Hero";
 import AboutMe from "@/components/about/AboutMe";
+import ContactUs from "@/components/contact-us/ContactUs";
 import Navbar from "@/components/navbar/Navbar";
 import Projects from "@/components/projects/Projects";
 import Services from "@/components/services/Services";
@@ -14,6 +15,7 @@ export default function Home() {
       <Services />
       <Skills />
       <Projects />
+      <ContactUs />
     </main>
   );
 }
