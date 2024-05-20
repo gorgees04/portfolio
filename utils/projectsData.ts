@@ -49,7 +49,7 @@ export const projectsData = [
       "Bcrypt",
     ],
     img: "images/projects/bookshelf.png",
-    demo: "https://bookshelf-app-dv7j.onrender.com/api-doc",
+    demo: "http://ec2-16-171-34-117.eu-north-1.compute.amazonaws.com/api-doc",
     github: "https://github.com/gorgees04/bookshelf_app",
   },
   {

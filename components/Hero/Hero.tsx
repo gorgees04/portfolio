@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { Spotlight } from "../ui/Spotlight";
 import profileImg from "@/public/images/profile/profile-4.png";
 import Image from "next/image";
 import HeroBtn from "./HeroBtn";
