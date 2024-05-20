@@ -1,9 +1,11 @@
+"use client";
 import { ReactNode } from "react";
 import { MdOutlineErrorOutline } from "react-icons/md";
 import { CgWebsite } from "react-icons/cg";
 import { FaBusinessTime } from "react-icons/fa";
 import ServiceCard from "./ServiceCard";
 import { FaLaptopCode } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 type Service = {
   title: string;
@@ -36,24 +38,43 @@ const services: Service[] = [
   },
 ];
 
+// animation
+
+const servicesVariants = {
+  hidden: { x: -100, opacity: 0 },
+  show: {
+    x: 0,
+    opacity: 1,
+    transition: { duration: 0.4, staggerChildren: 0.5 },
+  },
+};
+
 const Services = () => {
   return (
-    <div
+    <motion.div
+      variants={servicesVariants}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ margin: "-200px", once: true }}
       className="flex flex-col justify-center items-center mb-36"
       id="services"
     >
       <h1 className="text-4xl font-extrabold my-10">Services</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
+      <motion.div
+        variants={servicesVariants}
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10"
+      >
         {services.map((service: Service, i: number) => (
-          <ServiceCard
-            key={i}
-            title={service.title}
-            description={service.description}
-            icon={service.icon}
-          />
+          <motion.div variants={servicesVariants} key={i}>
+            <ServiceCard
+              title={service.title}
+              description={service.description}
+              icon={service.icon}
+            />
+          </motion.div>
         ))}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

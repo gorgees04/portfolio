@@ -34,14 +34,6 @@ const TextVariants = {
       staggerChildren: 0.2,
     },
   },
-  scrollButton: {
-    opacity: 0,
-    y: 10,
-    transition: {
-      duration: 2,
-      repeat: Infinity,
-    },
-  },
 };
 
 // resume's url
@@ -147,8 +139,15 @@ const Hero = () => {
         />
       </motion.div>
       <motion.div
-        variants={TextVariants}
-        animate="scrollButton"
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+          y: 0,
+        }}
+        transition={{
+          duration: 2,
+          repeat: Infinity,
+        }}
         className="absolute bottom-10 left-1/2 hidden sm:flex"
       >
         <Image

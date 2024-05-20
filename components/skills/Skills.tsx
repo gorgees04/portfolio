@@ -1,5 +1,4 @@
 "use client";
-import React, { useEffect, useState } from "react";
 import { InfiniteMovingCards } from "../ui/InfiniteMovingCards";
 import {
   Skill,
@@ -11,10 +10,24 @@ import {
   devops,
 } from "@/utils/skillsIcons";
 import SkillsCollection from "./SkillsCollection";
+import { motion } from "framer-motion";
+
+const skillsVariants = {
+  hidden: { opacity: 0, scale: 0 },
+  show: {
+    scale: 1,
+    opacity: 1,
+    transition: { duration: 1.1, staggerChildren: 0.5 },
+  },
+};
 
 const Skills = () => {
   return (
-    <div
+    <motion.div
+      variants={skillsVariants}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ margin: "-100px", once: true }}
       className="flex flex-col justify-center items-center mb-36 w-full px-7"
       id="skills"
     >
@@ -29,7 +42,7 @@ const Skills = () => {
         <SkillsCollection title="database" skills={database} />
         <SkillsCollection title="devops" skills={devops} />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

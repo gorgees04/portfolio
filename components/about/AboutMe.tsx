@@ -7,11 +7,14 @@ const AboutMe = () => {
   return (
     <section className="w-full px-7 mb-36">
       <motion.div
-        initial={{ x: "-1550px" }}
-        whileInView={{ x: 0 }}
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
         viewport={{
-          margin: "-200px",
+          margin: "-100px",
           once: true,
+        }}
+        transition={{
+          duration: 1,
         }}
         id="about-me"
         className="grid grid-rows-1 lg:grid-cols-3 w-full bg-[#111212] rounded-2xl text-center overflow-hidden"
