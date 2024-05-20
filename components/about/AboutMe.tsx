@@ -5,29 +5,36 @@ import devImg from "@/public/images/dev/dev-2.jpg";
 
 const AboutMe = () => {
   return (
-    <section className="w-full px-7 mb-36" id="about-me">
-      <div className="grid grid-rows-1 lg:grid-cols-3 w-full bg-[#111212] rounded-2xl text-center overflow-hidden">
-        <motion.div
-          initial={{ x: "100vh" }}
-          animate={{ x: 0 }}
-          transition={{
-            type: "spring",
-            stiffness: 150,
-            damping: 20,
-          }}
-          className="lg:col-span-1 flex justify-center item-center mx-auto max-w-[500px] w-full"
-        >
+    <section className="w-full px-7 mb-36">
+      <motion.div
+        initial={{ x: "-1550px" }}
+        whileInView={{ x: 0 }}
+        viewport={{
+          margin: "-200px",
+          once: true,
+        }}
+        id="about-me"
+        className="grid grid-rows-1 lg:grid-cols-3 w-full bg-[#111212] rounded-2xl text-center overflow-hidden"
+      >
+        <div className="lg:col-span-1 flex justify-center item-center mx-auto max-w-[500px] w-full">
           <Image
             src={devImg}
             alt="home_img"
             priority={true}
-            // className="md:w-[400px] lg:w-[450px] xl:w-[550px]"
-            // className="md:w-[400px] lg:w-[450px] xl:w-full"
             className="rounded"
           />
-        </motion.div>
+        </div>
 
-        <div className="lg:col-span-2 my-5">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{
+            margin: "-400px",
+            once: true,
+          }}
+          transition={{ ease: "linear", duration: 2, x: { duration: 1 } }}
+          className="lg:col-span-2 my-5"
+        >
           <h1 className="text-center text-4xl md:text-5xl font-extrabold">
             About Me
           </h1>
@@ -69,8 +76,8 @@ const AboutMe = () => {
               the latest sci-fi flick. Cheers to the journey ahead!
             </li>
           </ul>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };
