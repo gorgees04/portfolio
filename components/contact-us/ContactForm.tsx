@@ -10,12 +10,12 @@ const ContactForm = () => {
   };
 
   return (
-    <div>
+    <div className="w-full px-10 xl:px-16">
       <form
         action="https://formsubmit.co/gorgees041@gmail.com"
         method="POST"
         onSubmit={handleSubmit}
-        className="flex flex-col justify-center w-[400px] md:w-[500px]"
+        className="flex flex-col justify-center"
       >
         <input
           required

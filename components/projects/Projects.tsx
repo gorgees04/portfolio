@@ -4,7 +4,10 @@ import { Project, projectsData } from "@/utils/projectsData";
 
 const Projects = () => {
   return (
-    <div className="flex flex-col justify-center items-center px-10 mb-36">
+    <div
+      className="flex flex-col justify-center items-center px-10 mb-36"
+      id="projects"
+    >
       <h1 className="text-4xl font-extrabold my-5">Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
         {projectsData.map((project: Project, idx: number) => (

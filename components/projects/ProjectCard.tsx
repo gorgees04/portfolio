@@ -2,7 +2,6 @@ import React from "react";
 // import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import { FaCode } from "react-icons/fa";
 import { IoEye } from "react-icons/io5";
-import Link from "next/link";
 import { Project } from "@/utils/projectsData";
 
 const ProjectCard = ({

@@ -5,7 +5,7 @@ import devImg from "@/public/images/dev/dev-2.jpg";
 
 const AboutMe = () => {
   return (
-    <section className="w-full px-7 mb-36">
+    <section className="w-full px-7 mb-36" id="about-me">
       <div className="grid grid-rows-1 lg:grid-cols-3 w-full bg-[#111212] rounded-2xl text-center overflow-hidden">
         <motion.div
           initial={{ x: "100vh" }}

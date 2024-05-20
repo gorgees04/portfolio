@@ -14,7 +14,10 @@ import SkillsCollection from "./SkillsCollection";
 
 const Skills = () => {
   return (
-    <div className="flex flex-col justify-center items-center mb-36 w-full px-7">
+    <div
+      className="flex flex-col justify-center items-center mb-36 w-full px-7"
+      id="skills"
+    >
       <h1 className="text-4xl font-extrabold my-5">Technical Skills</h1>
       <div className=" w-full rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
         <InfiniteMovingCards items={skills} direction="right" speed="slow" />
