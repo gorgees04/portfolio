@@ -13,7 +13,7 @@ const ProjectCard = ({
   tools,
 }: Project) => {
   return (
-    <div className="bg-gBlackLight overflow-hidden rounded-lg">
+    <div className="bg-gBlackLight overflow-hidden rounded-lg h-full">
       <div
         className="h-52 md:h-72 rounded-t-xl relative group"
         style={{ background: `url(${img})`, backgroundSize: "cover" }}
