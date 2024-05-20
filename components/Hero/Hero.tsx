@@ -105,7 +105,7 @@ const Hero = () => {
           stiffness: 150,
           damping: 20,
         }}
-        className="col-span-1 flex justify-center lg:justify-end items-start md:pt-16 lg:pr-12 lg:pt-28"
+        className="col-span-1 flex justify-center lg:justify-center items-center"
       >
         <Image
           src={profileImg}
@@ -113,7 +113,7 @@ const Hero = () => {
           width={580}
           height={0}
           priority={true}
-          className="rounded-md shadow-lg shadow-black border-2 border-gBlue md:w-[400px] lg:w-[450px] xl:w-[550px]"
+          className="rounded-md shadow-lg shadow-black border-2 border-gBlue w-[400px] md:w-[300px] lg:w-[400px] xl:w-[500px]"
         />
       </motion.div>
     </div>

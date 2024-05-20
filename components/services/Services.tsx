@@ -38,7 +38,7 @@ const services: Service[] = [
 
 const Services = () => {
   return (
-    <div className="flex flex-col justify-center items-center mb-20">
+    <div className="flex flex-col justify-center items-center mb-36">
       <h1 className="text-4xl font-extrabold my-10">Services</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
         {services.map((service: Service, i: number) => (

@@ -5,7 +5,7 @@ import devImg from "@/public/images/dev/dev-2.jpg";
 
 const AboutMe = () => {
   return (
-    <section className="w-full px-7 mb-10">
+    <section className="w-full px-7 mb-36">
       <div className="grid grid-rows-1 lg:grid-cols-3 w-full bg-[#111212] rounded-2xl text-center overflow-hidden">
         <motion.div
           initial={{ x: "100vh" }}
@@ -15,7 +15,7 @@ const AboutMe = () => {
             stiffness: 150,
             damping: 20,
           }}
-          className="lg:col-span-1 flex justify-center item-center mx-auto w-[500px] lg:w-full"
+          className="lg:col-span-1 flex justify-center item-center mx-auto max-w-[500px] w-full"
         >
           <Image
             src={devImg}
