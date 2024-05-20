@@ -32,7 +32,7 @@ const AboutMe = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{
-            margin: "-400px",
+            margin: "-200px",
             once: true,
           }}
           transition={{ ease: "linear", duration: 2, x: { duration: 1 } }}
