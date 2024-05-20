@@ -5,21 +5,21 @@ import devImg from "@/public/images/dev/dev-2.jpg";
 
 const AboutMe = () => {
   return (
-    <section className="w-full px-7 mb-36">
+    <section className="w-full px-4 mb-36">
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{
-          margin: "-100px",
+          margin: "-40px",
           once: true,
         }}
         transition={{
           duration: 1,
         }}
         id="about-me"
-        className="grid grid-rows-1 lg:grid-cols-3 w-full bg-[#111212] rounded-2xl text-center overflow-hidden"
+        className="grid grid-rows-1 md:grid-cols-2 lg:grid-cols-3 w-full bg-[#111212] rounded-2xl text-center overflow-hidden"
       >
-        <div className="lg:col-span-1 flex justify-center item-center mx-auto max-w-[500px] w-full">
+        <div className="md:col-span-1 flex justify-center item-center mx-auto max-w-[500px] w-full">
           <Image
             src={devImg}
             alt="home_img"
@@ -35,13 +35,18 @@ const AboutMe = () => {
             margin: "-200px",
             once: true,
           }}
-          transition={{ ease: "linear", duration: 2, x: { duration: 1 } }}
-          className="lg:col-span-2 my-5"
+          transition={{
+            ease: "linear",
+            duration: 2,
+            delay: 0.5,
+            x: { duration: 1 },
+          }}
+          className="md:col-span-1 lg:col-span-2 my-5"
         >
-          <h1 className="text-center text-4xl md:text-5xl font-extrabold">
+          <h1 className="text-center text-3xl sm:text-4xl lg:text-5xl font-extrabold">
             About Me
           </h1>
-          <ul className="text-justify flex flex-col justify-center p-5 text-[15px] lg:px-10 text-gLightBlue">
+          <ul className="text-justify flex flex-col justify-center p-2 sm:p-5 text-[12px] lg:text-[15px] lg:px-10 text-gLightBlue">
             <li>
               As a web developer, I have experience in both front-end and
               back-end development, where I focus on creating engaging user

@@ -10,7 +10,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-full px-10 xl:px-16">
+    <div className="w-full px-5 xl:px-16">
       <form
         action="https://formsubmit.co/gorgees041@gmail.com"
         method="POST"

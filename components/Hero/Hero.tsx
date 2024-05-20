@@ -42,7 +42,7 @@ const resumUrl = process.env.RESUME_URL;
 const Hero = () => {
   return (
     <div
-      className=" relative grid grid-rows-1 md:grid-cols-2 md:gap-5 lg:gap-10 w-full p-10 mb-24 xl:mb-0 xl:min-h-[880px]"
+      className=" relative grid grid-rows-1 md:grid-cols-2 md:gap-5 lg:gap-10 w-full p-5 mb-24 xl:mb-0 xl:min-h-[880px]"
       id="home"
     >
       {/* section 1 */}

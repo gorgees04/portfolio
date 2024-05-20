@@ -47,6 +47,7 @@ export const projectsData = [
       "PostgreSQL",
       "JWT",
       "Bcrypt",
+      "AWS",
     ],
     img: "images/projects/bookshelf.png",
     demo: "http://ec2-16-171-34-117.eu-north-1.compute.amazonaws.com/api-doc",

@@ -16,24 +16,23 @@ type Service = {
 const services: Service[] = [
   {
     title: "Problem-Solving",
-    description: "Help to solev problem and bugs of existing project",
+    description: "Assist with fixing bugs and issues in existing project",
     icon: <MdOutlineErrorOutline />,
   },
   {
     title: "E-commerce Websites",
-    description: "Build dynamic e-commerce websites for small businesses",
+    description: "Create dynamic e-commerce websites for small businesses",
     icon: <CgWebsite />,
   },
   {
     title: "Freelance",
-    description:
-      "Provide expert freelance services for various development needs",
+    description: "Offer expert freelance services for various dev needs",
     icon: <FaBusinessTime />,
   },
   {
-    title: "Traning",
+    title: "Training",
     description:
-      "Provide expert freelance services for various development needs",
+      "Help kickstart your journey as a web developer with self-teaching",
     icon: <FaLaptopCode />,
   },
 ];

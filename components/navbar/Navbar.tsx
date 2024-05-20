@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { Social, social } from "@/utils/contactData";
+import { FaCode } from "react-icons/fa";
 
 const iconAnim = {
   hidden: { x: "-100vh" },
@@ -26,12 +27,15 @@ const Navbar = () => {
   return (
     <div className="flex items-center justify-between mx-10 md:mx-24 w-[90%]">
       <motion.h1
-        className="text-base md:text-xl font-semibold"
+        className="text-base md:text-xl font-extrabold flex items-center"
         variants={iconAnim}
         initial="hidden"
         animate="show"
         whileInView={{ opacity: 1 }}
       >
+        <span className="mr-2">
+          <FaCode />{" "}
+        </span>
         Assyrian Coder
       </motion.h1>
 

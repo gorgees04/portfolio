@@ -18,7 +18,7 @@ const ContactUs = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      viewport={{ margin: "-150px" }}
+      viewport={{ margin: "-150px", once: true }}
       className="flex flex-col justify-center items-center px-3 md:px-10 mb-36 w-full"
       id="contact-me"
     >
@@ -27,6 +27,7 @@ const ContactUs = () => {
         variants={contactVariants}
         initial="hidden"
         whileInView="show"
+        viewport={{ margin: "-150px", once: true }}
         className="grid grid-cols-1 md:grid-cols-2 w-full"
       >
         <motion.div variants={contactVariants} className="mx-auto mb-10">

@@ -19,6 +19,7 @@ import cliImg from "@/public/images/icons/cli.png";
 import dockerImg from "@/public/images/icons/docker.png";
 import postgresqlImg from "@/public/images/icons/postgresql.png";
 import mongodbImg from "@/public/images/icons/mongodb.png";
+import awsImg from "@/public/images/icons/aws.png";
 import { StaticImageData } from "next/image";
 
 export type Skill = { name: string; img: StaticImageData };
@@ -43,6 +44,7 @@ export const skills: Skill[] = [
   { name: "git", img: gitImg },
   { name: "CLI", img: cliImg },
   { name: "docker", img: dockerImg },
+  { name: "MongoDB (NOSQL)", img: awsImg },
   { name: "PostgreSQL (SQL)", img: postgresqlImg },
   { name: "MongoDB (NOSQL)", img: mongodbImg },
 ];
@@ -76,11 +78,12 @@ export const devops = [
   { name: "git", img: gitImg },
   { name: "CLI", img: cliImg },
   { name: "docker", img: dockerImg },
+  { name: "AWS", img: dockerImg },
 ];
 
 export const database = [
   { name: "PostgreSQL (SQL)", img: postgresqlImg },
-  { name: "MongoDB (NOSQL)", img: mongodbImg },
+  { name: "MongoDB (NOSQL)", img: awsImg },
 ];
 
 export default skills;
