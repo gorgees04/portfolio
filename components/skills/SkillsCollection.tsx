@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 type Skill = { name: string; img: StaticImageData };
 
 const SkillsCollection = ({
