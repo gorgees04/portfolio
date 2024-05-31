@@ -50,7 +50,7 @@ export const projectsData = [
       "AWS",
     ],
     img: "images/projects/bookshelf.png",
-    demo: "http://ec2-16-171-34-117.eu-north-1.compute.amazonaws.com/api-doc",
+    demo: "https://bookshelf-app-dv7j.onrender.com/api-doc",
     github: "https://github.com/gorgees04/bookshelf_app",
   },
   {
