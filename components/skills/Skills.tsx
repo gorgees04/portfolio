@@ -27,7 +27,7 @@ const Skills = () => {
       variants={skillsVariants}
       initial="hidden"
       whileInView="show"
-      viewport={{ margin: "-100px", once: true }}
+      viewport={{ once: true }}
       className="flex flex-col justify-center items-center mb-36 w-full px-7"
       id="skills"
     >

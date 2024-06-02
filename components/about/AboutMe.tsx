@@ -10,7 +10,6 @@ const AboutMe = () => {
         initial={{ opacity: 0, scale: 0 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{
-          margin: "-40px",
           once: true,
         }}
         transition={{
