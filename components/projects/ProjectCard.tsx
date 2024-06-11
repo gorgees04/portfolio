@@ -1,7 +1,9 @@
 import React from "react";
 // import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import { FaCode } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { IoEye } from "react-icons/io5";
+import { CgWebsite } from "react-icons/cg";
 import { Project } from "@/utils/projectsData";
 
 const ProjectCard = ({
@@ -24,14 +26,14 @@ const ProjectCard = ({
             target="_blank"
             className="h-14 w-14 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
           >
-            <FaCode className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />
+            <FaGithub className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />
           </a>
           <a
             href={demo}
             target="_blank"
             className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
           >
-            <IoEye className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />
+            <CgWebsite className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />
           </a>
         </div>
       </div>
