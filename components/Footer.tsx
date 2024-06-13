@@ -8,7 +8,7 @@ const Footer = () => {
           <span className="mr-2">
             <FaCode />
           </span>
-          Assyrian Coder
+          ASSYRIAN DEV
         </p>
         <p className=" text-gLightBlue text-sm">
           Copyright @ 2024 Gorgees Odisho

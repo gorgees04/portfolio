@@ -115,9 +115,9 @@ const Hero = () => {
           <motion.div variants={btnAnim} initial="hidden" animate="show">
             <HireBtn title="HIRE ME" url={"#contact-me"} />
           </motion.div>
-          <motion.div variants={btnAnim} initial="hidden" animate="show">
+          {/* <motion.div variants={btnAnim} initial="hidden" animate="show">
             <HeroBtn title="CV / RESUME" url={resumUrl} />
-          </motion.div>
+          </motion.div> */}
         </div>
       </motion.div>
 
