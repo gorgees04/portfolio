@@ -1,4 +1,15 @@
+// next.config.js
+// require("dotenv").config();
+import dotenv from "dotenv";
+
+dotenv.config();
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  env: {
+    EMAIL_USER: process.env.EMAIL_USER,
+    EMAIL_PASS: process.env.EMAIL_PASS,
+  },
+};
 
 export default nextConfig;
