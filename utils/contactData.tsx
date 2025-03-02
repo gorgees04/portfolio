@@ -32,8 +32,8 @@ export const social: Social[] = [
   },
   {
     name: "address",
-    link: "https://www.google.com/maps/place/Amman,+Jordan",
-    place: "Amman, Jordan",
+    link: "https://www.google.com/maps/place/Melbourne+VIC",
+    place: "Melbourne, Australia",
     icon: <FaMapLocationDot />,
   },
 ];

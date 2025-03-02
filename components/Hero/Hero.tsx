@@ -100,9 +100,8 @@ const Hero = () => {
           className="text-gLightBlue text-justify opacity-70"
         >
           Hello tech, I&apos;m{" "}
-          <span className="font-bold text-gBlue">Assyrian</span> from Iraq &
-          currently live in Jordan, embarking into the dynamic world of web
-          development.
+          <span className="font-bold text-gBlue">Assyrian</span> recently moved
+          to Australia, embarking into the dynamic world of web development.
           <span className="font-bold text-gBlue"> As a Full-Stack</span>{" "}
           developer. I&apos;m captivated by the process of transforming ideas
           into digital realities. Through my journey, I&apos;ve picked up not
