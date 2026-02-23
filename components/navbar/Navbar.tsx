@@ -36,7 +36,7 @@ const Navbar = () => {
         <span className="mr-2">
           <FaCode />{" "}
         </span>
-        ASSYRIAN DEV
+        G DEV
       </motion.h1>
 
       <motion.div
